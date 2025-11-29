@@ -14,10 +14,10 @@
     "javascript",
     "http-client"
   ],
-  "author": "Your Name",
+  "author": "Mukesh Pathak",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/rexio.git"
+    "url": "https://github.com/developermickey/rexio"
   }
 }
