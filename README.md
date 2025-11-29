@@ -1,5 +1,8 @@
 # 🚀 REXIO-API — Modern Fetch-Powered HTTP Request Library
 
+**Created & Maintained by: _Mukesh Pathak_**  
+Passionate JavaScript Engineer | Open‑Source Builder
+
 ![npm](https://img.shields.io/npm/v/rexio-api)
 ![downloads](https://img.shields.io/npm/dw/rexio-api)
 ![license](https://img.shields.io/npm/l/rexio-api)
@@ -8,6 +11,8 @@
 
 Rexio-API is a lightweight, axios-style HTTP client built using native **fetch()**
 with a clean, minimal API designed for **Node.js, Browser, React, Next.js & API apps**.
+
+Fast. Simple. Modern.
 
 ---
 
@@ -25,7 +30,7 @@ yarn add rexio-api
 
 ---
 
-## 🔥 Quick Start
+## 🔥 Usage Example
 
 ```js
 import Rexio from "rexio-api";
@@ -50,7 +55,7 @@ console.log(data);
 
 ---
 
-## 🧪 Request with Body + Headers
+## 🧪 Request with Headers + Body
 
 ```js
 api
@@ -64,17 +69,16 @@ api
 
 ---
 
-## 🌍 Use Without baseURL
+## 🌍 Without baseURL
 
 ```js
 const api = new Rexio();
-
 api.get("https://dummyjson.com/products/1").then(console.log);
 ```
 
 ---
 
-## 📌 Configuration Options
+## 📌 Config Options
 
 ```js
 new Rexio({
@@ -90,31 +94,33 @@ new Rexio({
 
 ## 🔥 Features
 
-✔ Small & lightweight  
-✔ Works client + server  
-✔ Very simple API  
-✔ No dependencies  
-✔ Modern fetch-powered engine
+✔ Fetch Powered  
+✔ Works in Node & Browser  
+✔ Minimal API  
+✔ No Dependencies  
+✔ Fast & Clean
 
 ---
 
-## 🚀 Upcoming in **Rexio-API v2**
+## 🚀 Coming Soon — Rexio v2
 
-🔹 Request & Response Interceptors  
-🔹 Timeout & Retry  
-🔹 Upload / Download Progress  
+🔹 Interceptors like Axios  
+🔹 Retry + Timeout  
+🔹 Upload Progress  
 🔹 TypeScript Support  
 🔹 Plugin System
 
 ---
 
-## 🤝 Contributing
+## 🧑‍💻 Author
 
-Pull Requests are welcome.  
-Open issues & feature suggestions appreciated.
+**👤 Mukesh Pathak**  
+📌 Open Source Developer  
+💻 Building Rexio & More JavaScript Tools  
+⭐ Show support — Star on GitHub!
 
 ---
 
 ## 📝 License
 
-MIT — free for personal & commercial use.
+MIT — Free for personal & commercial projects
