@@ -1,22 +1,36 @@
-# 🚀 REXIO — Modern Fetch-powered HTTP Request Library
-
-Rexio is a lightweight, axios-like HTTP client designed for Node.js & browsers.
-Simple syntax, powerful design — great for APIs.
+Here is your UPDATED **README.md** with correct package name, badges, features, examples, and a much more professional look.
 
 ---
 
-## 📦 Install
+## 🔥 Updated `README.md`
 
+````md
+# 🚀 REXIO-API — Modern Fetch-powered HTTP Request Library
+
+![npm](https://img.shields.io/npm/v/rexio-api)
+![downloads](https://img.shields.io/npm/dw/rexio-api)
+![license](https://img.shields.io/npm/l/rexio-api)
+![size](https://img.shields.io/bundlephobia/minzip/rexio-api)
+
+Rexio-API is a lightweight Axios-like HTTP client built on top of Fetch.
+It supports all major HTTP methods with clean, minimal, developer-friendly syntax
+for both **Node.js** & **Browser environments**.
+
+---
+
+## 📦 Installation
+
+```bash
+npm install rexio-api
 ```
-npm install rexio
-```
+````
 
 ---
 
 ## 🔥 Basic Usage
 
 ```js
-import Rexio from "rexio";
+import Rexio from "rexio-api";
 
 const api = new Rexio({ baseURL: "https://jsonplaceholder.typicode.com" });
 
@@ -26,23 +40,65 @@ console.log(user);
 
 ---
 
-### Methods Supported
+## 🚀 API Methods
 
-| Method | Example |
-|--------|---------|
-| GET    | `api.get("/users")` |
-| POST   | `api.post("/users", data)` |
-| PUT    | `api.put("/users/1", data)` |
-| PATCH  | `api.patch("/users/1", data)` |
-| DELETE | `api.delete("/users/1")` |
+| Method     | Example                        |
+| ---------- | ------------------------------ |
+| **GET**    | `api.get("/users")`            |
+| **POST**   | `api.post("/users", data)`     |
+| **PUT**    | `api.put("/users/1", data)`    |
+| **PATCH**  | `api.patch("/users/1", data")` |
+| **DELETE** | `api.delete("/users/1")`       |
 
 ---
 
-### Future Updates
+## 🧪 Example Request with Body + Headers
 
-- Interceptors like Axios
-- Timeout + Retry
-- File Upload/Download Progress
-- TypeScript Version
+```js
+api
+  .post(
+    "/posts",
+    { title: "Rexio", body: "My first request", userId: 1 },
+    { Authorization: "Bearer Token123" }
+  )
+  .then(console.log);
+```
 
-MIT Licensed — contributions welcome.
+---
+
+## 🛠 Features (Current)
+
+✔ Fetch-Powered
+✔ Lightweight & Fast
+✔ Works in Node, Browser, React, Next.js
+✔ Easy Syntax — Axios-Like
+
+---
+
+## 🏗 Upcoming in Rexio v2
+
+🔹 Request + Response Interceptors
+🔹 Timeout & Retry Logic
+🔹 File Upload / Download Progress
+🔹 TypeScript Support
+🔹 Plugin System
+
+---
+
+> MIT Licensed | Open for contributions
+> ⭐ Star the repo if you like this project!
+
+```
+
+---
+
+If you want, I can **auto-generate a README banner + branding image** and a **documentation website** too.
+
+Just reply:
+
+### 👉 `design banner`
+or
+### 👉 `create docs site`
+
+We can take Rexio even bigger 🚀🦖
+```
