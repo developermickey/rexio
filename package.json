@@ -1,0 +1,23 @@
+{
+  "name": "rexio",
+  "version": "1.0.0",
+  "description": "Rexio — a modern lightweight HTTP request toolkit built on Fetch.",
+  "main": "index.js",
+  "type": "module",
+  "keywords": [
+    "http",
+    "fetch",
+    "axios",
+    "request",
+    "rexio",
+    "api-client",
+    "javascript",
+    "http-client"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/rexio.git"
+  }
+}
