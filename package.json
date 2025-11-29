@@ -1,6 +1,6 @@
 {
   "name": "rexio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Rexio — a modern lightweight HTTP request toolkit built on Fetch.",
   "main": "index.js",
   "type": "module",
