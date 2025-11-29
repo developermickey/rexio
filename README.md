@@ -1,20 +1,13 @@
-Here is your UPDATED **README.md** with correct package name, badges, features, examples, and a much more professional look.
-
----
-
-## 🔥 Updated `README.md`
-
-````md
-# 🚀 REXIO-API — Modern Fetch-powered HTTP Request Library
+# 🚀 REXIO-API — Modern Fetch-Powered HTTP Request Library
 
 ![npm](https://img.shields.io/npm/v/rexio-api)
 ![downloads](https://img.shields.io/npm/dw/rexio-api)
 ![license](https://img.shields.io/npm/l/rexio-api)
 ![size](https://img.shields.io/bundlephobia/minzip/rexio-api)
+![node](https://img.shields.io/node/v/rexio-api)
 
-Rexio-API is a lightweight Axios-like HTTP client built on top of Fetch.
-It supports all major HTTP methods with clean, minimal, developer-friendly syntax
-for both **Node.js** & **Browser environments**.
+Rexio-API is a lightweight, axios-style HTTP client built using native **fetch()**
+with a clean, minimal API designed for **Node.js, Browser, React, Next.js & API apps**.
 
 ---
 
@@ -23,82 +16,105 @@ for both **Node.js** & **Browser environments**.
 ```bash
 npm install rexio-api
 ```
-````
+
+or
+
+```bash
+yarn add rexio-api
+```
 
 ---
 
-## 🔥 Basic Usage
+## 🔥 Quick Start
 
 ```js
 import Rexio from "rexio-api";
 
 const api = new Rexio({ baseURL: "https://jsonplaceholder.typicode.com" });
 
-const user = await api.get("/posts/1");
-console.log(user);
+const data = await api.get("/posts/1");
+console.log(data);
 ```
 
 ---
 
-## 🚀 API Methods
+## ⚡ API Methods
 
-| Method     | Example                        |
-| ---------- | ------------------------------ |
-| **GET**    | `api.get("/users")`            |
-| **POST**   | `api.post("/users", data)`     |
-| **PUT**    | `api.put("/users/1", data)`    |
-| **PATCH**  | `api.patch("/users/1", data")` |
-| **DELETE** | `api.delete("/users/1")`       |
+| Method   | Example Usage                  |
+| -------- | ------------------------------ |
+| `GET`    | `api.get("/users")`            |
+| `POST`   | `api.post("/users", data)`     |
+| `PUT`    | `api.put("/users/1", data")`   |
+| `PATCH`  | `api.patch("/users/1", data")` |
+| `DELETE` | `api.delete("/users/1")`       |
 
 ---
 
-## 🧪 Example Request with Body + Headers
+## 🧪 Request with Body + Headers
 
 ```js
 api
   .post(
     "/posts",
-    { title: "Rexio", body: "My first request", userId: 1 },
-    { Authorization: "Bearer Token123" }
+    { title: "Rexio API", body: "Hello world!", userId: 1 },
+    { Authorization: "Bearer 12345" }
   )
   .then(console.log);
 ```
 
 ---
 
-## 🛠 Features (Current)
+## 🌍 Use Without baseURL
 
-✔ Fetch-Powered
-✔ Lightweight & Fast
-✔ Works in Node, Browser, React, Next.js
-✔ Easy Syntax — Axios-Like
+```js
+const api = new Rexio();
+
+api.get("https://dummyjson.com/products/1").then(console.log);
+```
 
 ---
 
-## 🏗 Upcoming in Rexio v2
+## 📌 Configuration Options
 
-🔹 Request + Response Interceptors
-🔹 Timeout & Retry Logic
-🔹 File Upload / Download Progress
-🔹 TypeScript Support
+```js
+new Rexio({
+  baseURL: "https://api.example.com",
+  headers: {
+    Authorization: "Bearer token123",
+    "X-Custom-Header": "Hello",
+  },
+});
+```
+
+---
+
+## 🔥 Features
+
+✔ Small & lightweight  
+✔ Works client + server  
+✔ Very simple API  
+✔ No dependencies  
+✔ Modern fetch-powered engine
+
+---
+
+## 🚀 Upcoming in **Rexio-API v2**
+
+🔹 Request & Response Interceptors  
+🔹 Timeout & Retry  
+🔹 Upload / Download Progress  
+🔹 TypeScript Support  
 🔹 Plugin System
 
 ---
 
-> MIT Licensed | Open for contributions
-> ⭐ Star the repo if you like this project!
+## 🤝 Contributing
 
-```
+Pull Requests are welcome.  
+Open issues & feature suggestions appreciated.
 
 ---
 
-If you want, I can **auto-generate a README banner + branding image** and a **documentation website** too.
+## 📝 License
 
-Just reply:
-
-### 👉 `design banner`
-or
-### 👉 `create docs site`
-
-We can take Rexio even bigger 🚀🦖
-```
+MIT — free for personal & commercial use.
